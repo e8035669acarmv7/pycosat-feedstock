@@ -35,6 +35,7 @@ test:
 about:
   home: https://github.com/ContinuumIO/pycosat
   license: MIT
+  license_file: LICENSE
   summary: Bindings to picosat (a SAT solver)
   description: |
     PicoSAT is a popular SAT solver written by Armin Biere in pure C. This
