@@ -1,5 +1,5 @@
 {% set name = "pycosat" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pycosat-{{ version }}.tar.gz
   url: https://github.com/ContinuumIO/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: ec8940870ed1d1e6ae512fa68229f349f8fea2d4309ae1e063ffc20c141a4281
+  sha256: abcaf3d6afb332b0d8363590d0aaa81f00f71142900fbae2608f7d595d5e4492
 
 build:
   number: 0
