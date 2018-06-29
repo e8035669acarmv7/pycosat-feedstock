@@ -9,19 +9,25 @@ Feedstock license: BSD 3-Clause
 
 Summary: Bindings to picosat (a SAT solver)
 
+PicoSAT is a popular SAT solver written by Armin Biere in pure C. This
+package provides efficient Python bindings to picosat on the C level, i.e.
+when importing pycosat, the picosat solver becomes part of the Python
+process itself.
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pycosat-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pycosat-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pycosat-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pycosat-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pycosat-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pycosat-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pycosat-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pycosat-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pycosat-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pycosat-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pycosat-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pycosat-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pycosat/badges/version.svg)](https://anaconda.org/conda-forge/pycosat)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pycosat/badges/downloads.svg)](https://anaconda.org/conda-forge/pycosat)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pycosat-green.svg)](https://anaconda.org/conda-forge/pycosat) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pycosat.svg)](https://anaconda.org/conda-forge/pycosat) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pycosat.svg)](https://anaconda.org/conda-forge/pycosat) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pycosat.svg)](https://anaconda.org/conda-forge/pycosat) |
 
 Installing pycosat
 ==================
@@ -66,6 +72,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
