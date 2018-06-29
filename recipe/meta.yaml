@@ -16,9 +16,10 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - msinttypes  # [win and py2k]
     - python
-    - toolchain
 
   run:
     - python
