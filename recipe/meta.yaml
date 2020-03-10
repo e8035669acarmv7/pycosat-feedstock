@@ -6,12 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  fn: pycosat-{{ version }}.tar.gz
   url: https://github.com/ContinuumIO/{{ name }}/archive/{{ version }}.tar.gz
   sha256: abcaf3d6afb332b0d8363590d0aaa81f00f71142900fbae2608f7d595d5e4492
 
 build:
-  number: 1002
+  number: 1003
   script: python setup.py install
 
 requirements:
@@ -36,7 +35,9 @@ test:
 about:
   home: https://github.com/ContinuumIO/pycosat
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - COPYRIGHT
   summary: Bindings to picosat (a SAT solver)
   description: |
     PicoSAT is a popular SAT solver written by Armin Biere in pure C. This
