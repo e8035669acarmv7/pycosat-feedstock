@@ -19,6 +19,7 @@ requirements:
   host:
     - msinttypes  # [win and py2k]
     - python
+    - pip
 
   run:
     - python
