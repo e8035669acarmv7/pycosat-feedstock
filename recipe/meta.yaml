@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ContinuumIO/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/conda/{{ name }}/archive/{{ version }}.tar.gz
   sha256: abcaf3d6afb332b0d8363590d0aaa81f00f71142900fbae2608f7d595d5e4492
 
 build:
@@ -36,7 +36,7 @@ test:
     - pycosat
 
 about:
-  home: https://github.com/ContinuumIO/pycosat
+  home: https://github.com/conda/pycosat
   license: MIT
   license_file:
     - LICENSE
@@ -48,8 +48,8 @@ about:
     when importing pycosat, the picosat solver becomes part of the Python
     process itself.
   doc_url: https://pypi.python.org/pypi/pycosat
-  doc_source_url: https://github.com/ContinuumIO/pycosat/blob/master/README.rst
-  dev_url: https://github.com/ContinuumIO/pycosat
+  doc_source_url: https://github.com/conda/pycosat/blob/master/README.rst
+  dev_url: https://github.com/conda/pycosat
 
 extra:
   recipe-maintainers:
