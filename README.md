@@ -1,7 +1,7 @@
 About pycosat
 =============
 
-Home: https://github.com/ContinuumIO/pycosat
+Home: https://github.com/conda/pycosat
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycosat-feedsto
 
 Summary: Bindings to picosat (a SAT solver)
 
-Development: https://github.com/ContinuumIO/pycosat
+Development: https://github.com/conda/pycosat
 
 Documentation: https://pypi.python.org/pypi/pycosat
 
