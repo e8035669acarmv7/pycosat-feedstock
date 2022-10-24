@@ -31,9 +31,12 @@ test:
     - uf20-098.cnf
     - sudoku.py
     - test_package.py
+  requires:
+    - pip
   imports:
     - pycosat
   commands:
+    - pip check
     - python test_package.py "{{ version }}"
 
 about:
