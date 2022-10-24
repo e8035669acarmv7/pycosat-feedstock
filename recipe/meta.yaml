@@ -31,9 +31,11 @@ test:
     - qg3-08.cnf
     - uf20-098.cnf
     - sudoku.py
-
+    - test_package.py
   imports:
     - pycosat
+  commands:
+    - python test_package.py "{{ version }}"
 
 about:
   home: https://github.com/conda/pycosat
