@@ -1,5 +1,5 @@
 {% set name = "pycosat" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/conda/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: abcaf3d6afb332b0d8363590d0aaa81f00f71142900fbae2608f7d595d5e4492
+  sha256: 79ffa99156810e58876dd6374af0b7bff88f9a4580ca8b8468c414c5c2454bb8
 
 build:
-  number: 1010
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -22,7 +22,6 @@ requirements:
     - msinttypes  # [win and py2k]
     - python
     - pip
-
   run:
     - python
 
@@ -31,9 +30,14 @@ test:
     - qg3-08.cnf
     - uf20-098.cnf
     - sudoku.py
-
+    - test_package.py
+  requires:
+    - pip
   imports:
     - pycosat
+  commands:
+    - pip check
+    - python test_package.py "{{ version }}"
 
 about:
   home: https://github.com/conda/pycosat
